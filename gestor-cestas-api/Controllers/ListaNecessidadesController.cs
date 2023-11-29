@@ -24,7 +24,7 @@ namespace gestor_cestas_api.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Create(ListaNecessidade model)
+        public async Task<ActionResult> Create([FromBody]ListaNecessidade model)
         {
             _context.ListaNecessidades.Add(model);
             await _context.SaveChangesAsync();
