@@ -40,7 +40,7 @@ namespace gestor_cestas_api.Controllers
 
             if (model == null) return NotFound();
 
-            GerarLinks(model);
+           // GerarLinks(model);
             return Ok(model);
         }
 
@@ -77,13 +77,13 @@ namespace gestor_cestas_api.Controllers
 
         }
 
-        private void GerarLinks(Beneficiario model)
-        {
-            model.Links.Add(new LinkDto(model.Id, Url.ActionLink(), rel: "self", metodo: "GET"));
-            model.Links.Add(new LinkDto(model.Id, Url.ActionLink(), rel: "update", metodo: "PUT"));
-            model.Links.Add(new LinkDto(model.Id, Url.ActionLink(), rel: "delete", metodo: "Delete"));
+       // private void GerarLinks(Beneficiario model)
+       // {
+         //   model.Links.Add(new LinkDto(model.Id, Url.ActionLink(), rel: "self", metodo: "GET"));
+         //   model.Links.Add(new LinkDto(model.Id, Url.ActionLink(), rel: "update", metodo: "PUT"));
+         //   model.Links.Add(new LinkDto(model.Id, Url.ActionLink(), rel: "delete", metodo: "Delete"));
 
-        }
+       // }
 
     }
 }
