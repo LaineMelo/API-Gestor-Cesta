@@ -24,7 +24,7 @@ namespace gestor_cestas_api.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Create(Beneficiario model)
+        public async Task<ActionResult> Create([FromBody]Beneficiario model)
         {
             _context.Beneficiarios.Add(model);
             await _context.SaveChangesAsync();

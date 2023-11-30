@@ -24,7 +24,7 @@ namespace gestor_cestas_api.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Create(RegistroCesta model)
+        public async Task<ActionResult> Create([FromBody]RegistroCesta model)
         {
             _context.RegistroCestas.Add(model);
             await _context.SaveChangesAsync();
