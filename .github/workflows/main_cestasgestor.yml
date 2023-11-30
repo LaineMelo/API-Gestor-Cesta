@@ -54,4 +54,4 @@ jobs:
           app-name: 'cestasgestor'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EF735F4ED0494AD7A908BF45A89EBE4A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_201CE587D77C49219196638A1DDD075B }}
